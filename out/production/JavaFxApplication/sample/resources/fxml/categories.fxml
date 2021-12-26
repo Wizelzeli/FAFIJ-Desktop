@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.main.controllers.CategoryController">
+   <children>
+      <Button fx:id="addCategoryButton" layoutX="279.0" layoutY="132.0" mnemonicParsing="false" onAction="#add" prefHeight="26.0" prefWidth="162.0" text="Добавить категорию" />
+      <Label layoutX="56.0" layoutY="57.0" text="Существующие категории:" />
+      <ListView fx:id="categoryList" layoutX="56.0" layoutY="91.0" prefHeight="266.0" prefWidth="170.0" />
+      <Button fx:id="deleteCategoryButton" layoutX="60.0" layoutY="371.0" mnemonicParsing="false" onAction="#delete" prefHeight="26.0" prefWidth="162.0" text="Удалить выбранную" />
+      <Label fx:id="messageAdd" layoutX="279.0" layoutY="178.0" prefHeight="62.0" prefWidth="162.0" wrapText="true" />
+      <TextField fx:id="categoryTextField" layoutX="279.0" layoutY="91.0" prefHeight="26.0" prefWidth="162.0" promptText="Название категории" />
+      <Label fx:id="messageDelete" layoutX="60.0" layoutY="407.0" prefHeight="62.0" prefWidth="162.0" wrapText="true" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="border_pane" prefHeight="500.0" prefWidth="700.0" fx:controller="sample.main.controllers.JournalController" xmlns:fx="http://javafx.com/fxml">
+<left>
+   <VBox fx:id="v_box" prefHeight="500.0" prefWidth="175.0" style="-fx-background-color: #999999;" >
+      <Button onAction="#showViewNotes" mnemonicParsing="false" prefHeight="71.0" prefWidth="200.0" text="Журнал" />
+      <Button onAction="#showViewCategories" mnemonicParsing="false" prefHeight="71.0" prefWidth="200.0" text="Категории" />
+      <Button onAction="#showViewChart" mnemonicParsing="false" prefHeight="71.0" prefWidth="200.0" text="Диаграмма" />
+      <Button onAction="#showViewInvite" mnemonicParsing="false" prefHeight="71.0" prefWidth="200.0" text="Пригласить" />
+      <Button onAction="#showViewInvitations" mnemonicParsing="false" prefHeight="71.0" prefWidth="200.0" text="Приглашения" />
+      <Button onAction="#showViewChanging" mnemonicParsing="false" prefHeight="71.0" prefWidth="200.0" text="Сменить журнал" />
+      <Button onAction="#exit" mnemonicParsing="false" prefHeight="72.0" prefWidth="200.0" text="Выход" />
+   </VBox>
+</left>
+   <center>
+      <fx:include source="/sample/resources/fxml/notes.fxml"/>
+   </center>
+</BorderPane>

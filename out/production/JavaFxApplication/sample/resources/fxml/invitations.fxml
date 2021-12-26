@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.main.controllers.InvitationsController">
+   <children>
+      <Label layoutX="211.0" layoutY="34.0" text="Приглашения" />
+      <TableView fx:id="tableInvitations" layoutX="131.0" layoutY="58.0" prefHeight="354.0" prefWidth="238.0">
+         <columns>
+            <TableColumn fx:id="journalColumn" prefWidth="118.4000301361084" text="Журнал" />
+            <TableColumn fx:id="roleColumn" prefWidth="118.39996337890625" text="Роль" />
+         </columns>
+      </TableView>
+      <Button fx:id="acceptButton" layoutX="256.0" layoutY="440.0" mnemonicParsing="false" onAction="#accept" prefHeight="26.0" prefWidth="112.0" text="Принять" />
+      <Button fx:id="declineButton" layoutX="131.0" layoutY="440.0" mnemonicParsing="false" onAction="#decline" prefHeight="26.0" prefWidth="112.0" text="Отклонить" />
+   </children>
+</AnchorPane>
